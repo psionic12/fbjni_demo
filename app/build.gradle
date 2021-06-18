@@ -17,6 +17,7 @@ android {
         externalNativeBuild {
             cmake {
                 cppFlags ""
+                arguments '-DANDROID_STL=c++_shared'
             }
         }
     }
@@ -50,5 +51,6 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-    implementation 'com.facebook.fbjni:fbjni:0.1.0'
+    api 'com.facebook.fbjni:fbjni:0.2.2'
+    implementation 'com.facebook.soloader:nativeloader:0.10.1'
 }
