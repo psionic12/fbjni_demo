@@ -52,5 +52,6 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     api 'com.facebook.fbjni:fbjni:0.2.2'
+    // TODO remove this if https://github.com/facebookincubator/fbjni/pull/59 is merged
     implementation 'com.facebook.soloader:nativeloader:0.10.1'
 }
